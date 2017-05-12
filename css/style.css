@@ -97,3 +97,6 @@ ul li a:hover{
     background: #000;
     width: 100%;
 }
+footer p{
+    padding-top: 5px;
+}
