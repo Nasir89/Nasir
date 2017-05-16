@@ -2,7 +2,8 @@ body
 {
     margin: 0;
     padding: 0;
-   background:;
+   background:lightblue;
+   
    
     
    } 
@@ -14,15 +15,26 @@ body
     max-width:95%;
     margin-left:auto;
     margin-right: auto;
+    
      
 
 }
+.header{
+    max-width: 100%;
+    height: 100px;
+}
+.header h1{
+    padding-top: 25px;
+    font-size: 40px;
+    padding-left: 10px;
 
+}
 .nav{
     height: 60px;
     max-width: 100%;
     background: #000;
     color: red;
+    
 }
 
 nav ul{
@@ -35,7 +47,13 @@ nav ul{
 nav ul li{
     width: 19.8%;
     height: 60px;
-    background-color:green;
+    background-color:blue;
+
+}
+nav ul li{
+    width: 19.8%;
+    display:flex;
+    
 
 }
 
@@ -48,14 +66,10 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    
-    
 }
 
 ul li a:hover{
         background-color: green;
-        display:none;
-        
 }
     
 /*======== Start Article ========  */
@@ -63,6 +77,8 @@ ul li a:hover{
     display: flex;
     flex-direction: row;
     padding: 15px 10px;
+    width: 800px;
+    
     
     
     
@@ -73,6 +89,7 @@ ul li a:hover{
     flex: 1;
     width: 48%;
     flex: 1;
+    
 }
 .flex-container .item img{
     width: 100%;
@@ -85,19 +102,56 @@ ul li a:hover{
     text-align: center;
     
 }
+
+/*======== start main content ========  */
+.main-content{
+    display: flex;
+    flex-direction: row;
+}
+.articles-content{
+    flex:3;
+    background: grayss;
+    border: 2px solid black;
+
+}
+.sidebar-content{
+    flex: 1;
+    padding: 10px;
+    background:gray;
+    
+}
+
+/*======== end main content ========  */
+
 .foter{
-    background: black;
+    background: blue;
     color: #fff;
     text-align: center;
     padding: 10px 0
 
 }
+
 .footer{
     height: 60px;
-    background: #000;
+    background: black;
     width: 100%;
+    padding: 5px;
 }
 footer p{
     padding-top: 5px;
     color: #fff;
+    
+}
+/*======== start media query ========  */
+@media (max-width: 991px) {
+    .main-content{
+    flex-direction: column;
+    
+}
+.articles-content{
+    flex:1;
+}
+.sidebar-content{
+
+}
 }
